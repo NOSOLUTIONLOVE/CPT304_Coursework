@@ -8,7 +8,8 @@ This repository holds **CPT304** coursework materials. The main body of work liv
 
 - **Curated open-source samples** — front-end-only apps, full-stack examples (MongoDB/Express/React, Django/MySQL), and tooling demos (Webpack, Tailwind, etc.).
 - **Documented local setup** — per-project install and run steps for macOS, Linux, and Windows are described in `Open_Source_Project/README.md`.
-- **Course artifacts** — Lighthouse JSON/HTML outputs for assignment or report use.
+- **Course artifacts** — Lighthouse JSON/HTML under `Lighthouse/`; coursework notes, guides, and reports under `docs/` (e.g. `docs/guides/`, `docs/reports/`).
+- **Assignment reference** — workflow summary in `CPT304_Coursework/cpt304-coursework-01-complete-workflow.md` (see course PDF for authoritative requirements).
 
 ## Installation
 
@@ -26,6 +27,7 @@ This repository holds **CPT304** coursework materials. The main body of work liv
 - **Browse coursework**: Inspect `Open_Source_Project/` and the nested project folders.
 - **Run a specific app**: Use the matching section in `Open_Source_Project/README.md` (paths, env files like `.env`, and ports are documented per project).
 - **Review audits**: Open files under `Lighthouse/` in a browser or editor as needed.
+- **Docs**: Optional reading — `docs/guides/cpt304-prerequisite-work-playbook.md`, `docs/reports/` for Lighthouse and CPT304 evaluation notes.
 
 ## License
 
