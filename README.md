@@ -1,5 +1,7 @@
 # CPT304 Coursework
 
+**Languages:** English | [简体中文](README.zh.md)
+
 ## Project Overview
 
 This repository holds **CPT304** coursework materials. The main body of work lives under `Open_Source_Project/`, which bundles **ten open-source project** copies (static sites, Node/Express, Django, and mixed stacks), each with local run instructions. A `Lighthouse/` folder stores performance audit artifacts (for example, Taskify-related reports).
