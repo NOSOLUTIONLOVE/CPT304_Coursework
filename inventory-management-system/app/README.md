@@ -1,24 +1,40 @@
-# 应用源码（authoritative source）
+> **CPT304 workspace:** This folder is a **full copy** of the course-bundled sample at `Open_Source_Project/inventory-management-system/`. Collaboration policy, fork URL, and sync log: [`WORKSPACE-SOURCE.md`](WORKSPACE-SOURCE.md). Parent docs: [`../README.md`](../README.md).
 
-## 推荐：以小组 GitHub fork 为准
+---
 
-日常开发与合并请求应在 **小组对 `sptin2002/inventory-management-system` 的 fork** 上进行。  
-本仓库根目录 `inventory-management-system/README.md` 中应维护 **fork 的 HTTPS/SSH URL**。
+# Web-Based Inventory Management System
+This repository contains the source code for a web-based inventory management system with CRUD functionality. The theme of the web app follows the famous clothing brand, named 'UNIQLO'. This project was created for one of my internship interview's technical assessment.
 
-## 本目录 `app/` 扮演什么角色
+A live demo version can be accessed through the following link:<br />
+~~https://gray-flower-0ce0a4e10.5.azurestaticapps.net/~~ <sub>The website is currently offline.</sub>
 
-当前 **默认不强制** 在本仓库内再放一份完整源码树，避免与 fork **双主库无说明** 漂移。
+## JavaScript Libraries/Frameworks
+- Bootstrap 5
+- DataTables
+- jQuery
 
-可选策略（组内只选其一并写进主 `README.md` 的表格）：
+## Code Structure
+- [index.html](https://github.com/julianganjs/inventory-management-system/blob/main/index.html): The main code for the website.
+- [assets](https://github.com/julianganjs/inventory-management-system/tree/main/assets): Contains all the styles, libraries, fonts and frameworks needed for the website to work and look properly.
+- [DB.txt](https://github.com/julianganjs/inventory-management-system/blob/main/DB.txt): An existing database file in JSON format to be imported into the inventory system.
 
-1. **仅链接**：`app/` 只有本 README，源码仅在 fork。提交课程 zip 时再从 fork 打标签或导出。  
-2. **定期快照**：每当里程碑结束，将 fork 某 commit 的源码复制到 `app/`，并在 commit message 或本文件脚注中记录 **日期与 commit SHA**。  
-3. **Git 子模块**：`app/` 子模块指向 fork（需要全员熟悉 submodule）。
+## Usage
+1. Clone this repository.
+2. Download [index.html](https://github.com/julianganjs/inventory-management-system/blob/main/index.html), [assets](https://github.com/julianganjs/inventory-management-system/tree/main/assets) and [DB.txt](https://github.com/julianganjs/inventory-management-system/blob/main/DB.txt) into the same directory.
+3. Open index.html using your default browser.
+4. Select `LOAD DATA` if you wish to import an existing database file or `NEW DATA` to create a new entry.
+5. Select `SAVE DATA` if you wish to export the edited data into a local file.
 
-## 课程对照样本
+## Examples
+- ### Main Screen (w/o Data)
+  <img src="https://github.com/julianganjs/inventory-management-system/assets/127673790/28508f25-43f3-4033-974e-30bf848c5345" width="650vw">
+- ### Main Screen (w/ Data)
+  <img src="https://github.com/julianganjs/inventory-management-system/assets/127673790/2a5690c7-9541-484b-b70e-4c1c3ba93b53" width="650vw">
+- ### Add New Item
+  <img src="https://github.com/julianganjs/inventory-management-system/assets/127673790/1f0a4b09-79db-439a-918b-9c2aec184583" width="650vw">
+  <br>A modal dialog pops up when an item needs to be added, updated or deleted. The total price is automatically calculated based on the quantity and unit price.<br>
+- ### Delete Item
+  <img src="https://github.com/julianganjs/inventory-management-system/assets/127673790/a9f44cd1-00b3-4783-a755-6e62da980514" width="650vw">
 
-需要对比「原版打包行为」时，使用只读路径：
-
-`Open_Source_Project/inventory-management-system/`
-
-该样本与官方列表仓库应同源；若发现差异，以 **你组 fork 的 `main`** 为准写报告。
+## License
+This project is licensed under the MIT License.

@@ -29,7 +29,9 @@
 
 | 路径 | 用途 |
 |------|------|
-| `app/README.md` | 应用源码权威位置与同步策略 |
+| `app/` | **完整应用源码**（自 `Open_Source_Project/inventory-management-system/` 迁入）；入口 `index.html`、`assets/`、`DB.txt`、`LICENSE` 等 |
+| `app/WORKSPACE-SOURCE.md` | 快照来源、fork 关系、同步记录 |
+| `app/README.md` | 上游项目说明 + 顶栏指向本工作区策略 |
 | `docs/dev-environment.md` | 开发环境与本地运行 |
 | `docs/defect-identification.md` | 步骤 2：四座「真缺陷」识别方法 |
 | `docs/templates/defect-log-template.md` | 缺陷登记模板 |
