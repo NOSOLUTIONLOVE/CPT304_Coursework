@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}PollN{% endblock %}
+
+{% block extra_head %}
+<!-- Additional CSS or other head content for the website app goes here -->
+{% load static %}
+<link href="{% static 'website/styles.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<!-- Common page elements go here, such as a header or navigation bar -->
+
+{% include "nav.html" %}
+
+<!-- The Website templates go here -->
+<div class="WEBSITE-body">
+    {% block website_body %}
+    {% endblock %}
+</div>
+
+<!-- Common page elements go here, such as a footer -->
+<!-- Footer -->
+<footer>
+    <p>2023</p>
+    <p>by</p>
+    <p>
+        <a href="https://github.com/bgtti/">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+    </p>
+</footer>
+<!-- Modal -->
+{% include "modal_delete_user.html" %}
+
+{% endblock %}
+
+
+{% block extra_body %}
+<!-- Additional JS or other body content for the website app goes here -->
+<!-- may be included by any template using this layout -->
+
+<!-- Ion Icon (github icon footer) See: https://ionic.io/ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+{% endblock %}

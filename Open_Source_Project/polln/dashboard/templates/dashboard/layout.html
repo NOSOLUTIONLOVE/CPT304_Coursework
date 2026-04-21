@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block extra_head %}
+<!-- Additional CSS or other head content for the dashboard app goes here -->
+{% load static %}
+<link href="{% static 'dashboard/styles.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<!-- Common page elements go here, such as a header or navigation bar -->
+{% include "nav.html" %}
+
+<!-- The Dashboard templates go here -->
+{% if user.is_authenticated %}
+    <div class="DASHBOARD-body">
+        {% block dashboard_body %}
+        {% endblock %}
+    </div>
+{% else %}
+    <p>Oops, there was a problem. Please try to <a href="{% url 'website:login' %}">sign in</a> again.</p>
+{% endif %}
+
+<!-- Common page elements go here, such as a footer -->
+<!-- Modal -->
+{% include "modal_delete_user.html" %}
+
+{% endblock %}
+
+{% block extra_body %}
+
+<!-- Additional JS or other body content for the dashboard app goes here -->
+<script src="{% static 'dashboard/script_dashboard.js' %}"></script>
+<script id="DragDropTouch" src="https://bernardo-castilho.github.io/DragDropTouch/DragDropTouch.js"></script>
+{% endblock %}
