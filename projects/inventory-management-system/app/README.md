@@ -1,4 +1,4 @@
-> **CPT304 workspace:** This folder is a **full copy** of the course-bundled sample at `Open_Source_Project/inventory-management-system/`. Collaboration policy, fork URL, and sync log: [`WORKSPACE-SOURCE.md`](WORKSPACE-SOURCE.md). Parent docs: [`../README.md`](../README.md).
+> **CPT304 workspace:** This folder is a **full copy** of the course-bundled sample at `third_party/open_source_projects/inventory-management-system/`. Collaboration policy, fork URL, and sync log: [`WORKSPACE-SOURCE.md`](WORKSPACE-SOURCE.md). Parent docs: [`../README.md`](../README.md).
 
 ---
 

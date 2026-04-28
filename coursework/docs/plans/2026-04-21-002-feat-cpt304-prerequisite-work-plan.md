@@ -3,14 +3,14 @@ title: CPT304 前置工作落地（指南与选型模板）
 type: feat
 status: active
 date: 2026-04-21
-origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
+origin: coursework/docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 ---
 
 # CPT304 前置工作落地（指南与选型模板）
 
 ## Overview
 
-将 `docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md` 中的「前置工作」落实为可跟随的操作指南与空白模板，便于小组在正式 fork 并进入步骤 2–4 之前统一行动；不修改课程作业 PDF/解析稿原文。
+将 `coursework/docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md` 中的「前置工作」落实为可跟随的操作指南与空白模板，便于小组在正式 fork 并进入步骤 2–4 之前统一行动；不修改课程作业 PDF/解析稿原文。
 
 ## Problem Frame
 
@@ -20,7 +20,7 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 
 - R1–R2：合规与协作 → 指南中「A. 小组与合规」与「E. 协作与证据」— Unit 1
 - R3–R4：概念与评分 → 指南中「B. 必读概念」— Unit 1
-- R5–R6：portfolio 与决策 → 指南中「C. 十项目扫描」+ `docs/templates/` 模板 — Unit 2
+- R5–R6：portfolio 与决策 → 指南中「C. 十项目扫描」+ `coursework/docs/templates/` 模板 — Unit 2
 
 ## Scope Boundaries
 
@@ -32,7 +32,7 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 ### Relevant Code and Patterns
 
 - 作业解析：`CPT304_Coursework/CPT304_Coursework_01_Details.md`
-- 可选参考：`docs/reports/lighthouse-comparative-analysis.md`（本地 Lighthouse 汇总，非评分要件）
+- 可选参考：`coursework/docs/reports/lighthouse-comparative-analysis.md`（本地 Lighthouse 汇总，非评分要件）
 
 ### Institutional Learnings
 
@@ -44,7 +44,7 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 
 ## Key Technical Decisions
 
-- **两份交付物**：① 主指南 `docs/guides/cpt304-prerequisite-work-playbook.md`；② 可复制填写的 `docs/templates/cpt304-project-selection-matrix.md`。
+- **两份交付物**：① 主指南 `coursework/docs/guides/cpt304-prerequisite-work-playbook.md`；② 可复制填写的 `coursework/docs/templates/cpt304-project-selection-matrix.md`。
 - **阶段划分**：A 合规 → B 概念 → C 十项目扫描 → D 选型决策门 → E fork 与分支约定 → F 与步骤 2 的衔接。
 
 ## Open Questions
@@ -61,14 +61,14 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 
 - [x] **Unit 1：撰写前置工作主指南**
 
-**Goal:** 创建 `docs/guides/cpt304-prerequisite-work-playbook.md`，覆盖 R1–R4 及与官方步骤 1–6 的对应关系表。
+**Goal:** 创建 `coursework/docs/guides/cpt304-prerequisite-work-playbook.md`，覆盖 R1–R4 及与官方步骤 1–6 的对应关系表。
 
 **Requirements:** R1, R2, R3, R4
 
 **Dependencies:** 无
 
 **Files:**
-- Create: `docs/guides/cpt304-prerequisite-work-playbook.md`
+- Create: `coursework/docs/guides/cpt304-prerequisite-work-playbook.md`
 
 **Approach:**
 - 用表格列出「前置活动 ↔ 作业步骤 ↔ 报告章节」映射。
@@ -85,15 +85,15 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 
 - [x] **Unit 2：项目选型矩阵模板 + 完成指南中的 portfolio 节**
 
-**Goal:** 创建 `docs/templates/cpt304-project-selection-matrix.md`，并在主指南中完成 R5–R6（十项目扫描维度、选型决策门、fork 前检查单）。
+**Goal:** 创建 `coursework/docs/templates/cpt304-project-selection-matrix.md`，并在主指南中完成 R5–R6（十项目扫描维度、选型决策门、fork 前检查单）。
 
 **Requirements:** R5, R6
 
 **Dependencies:** Unit 1（主指南需链接到模板）
 
 **Files:**
-- Create: `docs/templates/cpt304-project-selection-matrix.md`
-- Modify: `docs/guides/cpt304-prerequisite-work-playbook.md`
+- Create: `coursework/docs/templates/cpt304-project-selection-matrix.md`
+- Modify: `coursework/docs/guides/cpt304-prerequisite-work-playbook.md`
 
 **Approach:**
 - 模板含 10 行（对应作业列表项目名 + 空白列：栈、本地运行、预估测试难度、部署风险、备注）。
@@ -107,7 +107,7 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 
 ## System-Wide Impact
 
-- 仅新增/更新 `docs/` 下 Markdown；不影响 `Open_Source_Project/` 代码。
+- 仅新增/更新 `coursework/docs/` 下 Markdown；不影响 `Open_Source_Project/` 代码。
 
 ## Risks & Dependencies
 
@@ -117,5 +117,5 @@ origin: docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md
 
 ## Sources & References
 
-- **Origin document:** [docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md](docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md)
-- [CPT304_Coursework/CPT304_Coursework_01_Details.md](../../CPT304_Coursework/CPT304_Coursework_01_Details.md)
+- **Origin document:** [coursework/docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md](coursework/docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md)
+- [coursework/CPT304_Coursework/CPT304_Coursework_01_Details.md](../../coursework/CPT304_Coursework/CPT304_Coursework_01_Details.md)

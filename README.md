@@ -4,14 +4,19 @@
 
 ## Project Overview
 
-This repository holds **CPT304** coursework materials. The main body of work lives under `Open_Source_Project/`, which bundles **ten open-source project** copies (static sites, Node/Express, Django, and mixed stacks), each with local run instructions. A `Lighthouse/` folder stores performance audit artifacts (for example, Taskify-related reports).
+This repository holds **CPT304** coursework materials, organized into four top-level areas for fast navigation:
+
+- `coursework/` — course workflow, docs, templates, reports
+- `projects/` — writable project workspaces (your group’s actual development)
+- `third_party/` — bundled third-party samples (read-only reference)
+- `artifacts/` — generated outputs (e.g. Lighthouse JSON/HTML exports)
 
 ## Features
 
 - **Curated open-source samples** — front-end-only apps, full-stack examples (MongoDB/Express/React, Django/MySQL), and tooling demos (Webpack, Tailwind, etc.).
-- **Documented local setup** — per-project install and run steps for macOS, Linux, and Windows are described in `Open_Source_Project/README.md`.
-- **Course artifacts** — Lighthouse JSON/HTML under `Lighthouse/`; coursework notes, guides, and reports under `docs/` (e.g. `docs/guides/`, `docs/reports/`).
-- **Assignment reference** — workflow summary in `CPT304_Coursework/cpt304-coursework-01-complete-workflow.md` (see course PDF for authoritative requirements).
+- **Documented local setup** — per-project install and run steps are described in `third_party/open_source_projects/README.md`.
+- **Course artifacts** — Lighthouse JSON/HTML under `artifacts/lighthouse/`; notes, guides, and reports under `coursework/docs/`.
+- **Assignment reference** — workflow summary in `coursework/CPT304_Coursework/cpt304-coursework-01-complete-workflow.md` (see course PDF for authoritative requirements).
 
 ## Installation
 
@@ -22,14 +27,14 @@ This repository holds **CPT304** coursework materials. The main body of work liv
    cd CPT304_Coursework
    ```
 
-2. Open `Open_Source_Project/README.md` and follow the section for the project you need. Most static projects only require a browser or `python3 -m http.server`; Node or Python projects list `npm install`, virtualenv, or database steps there.
+2. Open `third_party/open_source_projects/README.md` and follow the section for the project you need. Most static projects only require a browser or `python3 -m http.server`; Node or Python projects list `npm install`, virtualenv, or database steps there.
 
 ## Usage
 
-- **Browse coursework**: Inspect `Open_Source_Project/` and the nested project folders.
-- **Run a specific app**: Use the matching section in `Open_Source_Project/README.md` (paths, env files like `.env`, and ports are documented per project).
-- **Review audits**: Open files under `Lighthouse/` in a browser or editor as needed.
-- **Docs**: Optional reading — `docs/guides/cpt304-prerequisite-work-playbook.md`, `docs/reports/` for Lighthouse and CPT304 evaluation notes.
+- **Browse course materials**: Start at `coursework/README.md` and `coursework/docs/`.
+- **Work on the main group project**: `projects/inventory-management-system/`.
+- **Run a bundled sample app**: Use `third_party/open_source_projects/README.md`.
+- **Review Lighthouse exports**: See `artifacts/lighthouse/`.
 
 ## License
 

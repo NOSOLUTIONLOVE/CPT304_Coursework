@@ -3,14 +3,14 @@ title: Lighthouse 多项目对比分析报告整理
 type: feat
 status: active
 date: 2026-04-21
-origin: docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md
+origin: coursework/docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md
 ---
 
 # Lighthouse 多项目对比分析报告整理
 
 ## Overview
 
-根据 `docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md`（见 origin），在仓库内新增一份简体中文的 Lighthouse 对比分析报告，数据全部来自 `Lighthouse/` 下各子目录的 JSON（见 `Lighthouse/<项目名>/*.json`），并引用关键未通过审计项说明短板。
+根据 `coursework/docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md`（见 origin），在仓库内新增一份简体中文的 Lighthouse 对比分析报告，数据全部来自 `Lighthouse/` 下各子目录的 JSON（见 `Lighthouse/<项目名>/*.json`），并引用关键未通过审计项说明短板。
 
 ## Problem Frame
 
@@ -46,14 +46,14 @@ origin: docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md
 
 ## Key Technical Decisions
 
-- **单一 Markdown 文件**：`docs/reports/lighthouse-comparative-analysis.md` 作为唯一主交付物（满足 R1 可追溯路径）。
+- **单一 Markdown 文件**：`coursework/docs/reports/lighthouse-comparative-analysis.md` 作为唯一主交付物（满足 R1 可追溯路径）。
 - **百分制展示**：将 JSON 中 `categories.*.score`（0–1）换算为 0–100 整数，与 Lighthouse UI 一致。
 
 ## Open Questions
 
 ### Resolved During Planning
 
-- 文件路径：定为 `docs/reports/lighthouse-comparative-analysis.md`。
+- 文件路径：定为 `coursework/docs/reports/lighthouse-comparative-analysis.md`。
 
 ### Deferred to Implementation
 
@@ -63,14 +63,14 @@ origin: docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md
 
 - [x] **Unit 1：撰写报告骨架与数据总览**
 
-**Goal:** 创建 `docs/reports/` 与主报告文件，包含标题、方法说明、Lighthouse 版本与采样时间、全项目对比总表（分类得分 + CWV 摘要 + 项目类型标签）。
+**Goal:** 创建 `coursework/docs/reports/` 与主报告文件，包含标题、方法说明、Lighthouse 版本与采样时间、全项目对比总表（分类得分 + CWV 摘要 + 项目类型标签）。
 
 **Requirements:** R1, R2, R3, R6
 
 **Dependencies:** 无
 
 **Files:**
-- Create: `docs/reports/lighthouse-comparative-analysis.md`
+- Create: `coursework/docs/reports/lighthouse-comparative-analysis.md`
 
 **Approach:**
 - 从各 JSON 读取 `lighthouseVersion`、`fetchTime`、`categories.*.score`、`audits` 中 FCP/LCP/TBT/CLS 的 `displayValue`。
@@ -94,7 +94,7 @@ origin: docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md
 **Dependencies:** Unit 1
 
 **Files:**
-- Modify: `docs/reports/lighthouse-comparative-analysis.md`
+- Modify: `coursework/docs/reports/lighthouse-comparative-analysis.md`
 
 **Approach:**
 - 对分类得分低于约 90 或 CWV 明显偏高的项目，从 JSON 提取未通过审计（`score < 1` 且非 notApplicable）的代表项。
@@ -118,5 +118,5 @@ origin: docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md
 
 ## Sources & References
 
-- **Origin document:** [docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md](docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md)
+- **Origin document:** [coursework/docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md](coursework/docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md)
 - Related data: `Lighthouse/**/*.json`

@@ -1,0 +1,4 @@
+.DS_Store
+
+# Cursor / VS Code (user-specific)
+.cursor/

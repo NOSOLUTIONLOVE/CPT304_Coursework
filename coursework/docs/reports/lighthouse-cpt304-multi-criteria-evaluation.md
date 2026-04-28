@@ -1,7 +1,7 @@
 # 基于 Lighthouse 的 CPT304 十项目多维度综合评估
 
 **日期：** 2026-04-21  
-**依据：** `docs/reports/lighthouse-comparative-analysis.md`（数据源自 `Lighthouse/**/*.json`）、`CPT304_Coursework/CPT304_Coursework_01_Details.md`、`Open_Source_Project/README.md`。
+**依据：** `coursework/docs/reports/lighthouse-comparative-analysis.md`（数据源自 `artifacts/lighthouse/**/*.json`）、`coursework/CPT304_Coursework/CPT304_Coursework_01_Details.md`、`third_party/open_source_projects/README.md`。
 
 **声明：** 本文用于**选题与工期风险**讨论，不替代课程官方 PDF；未在生产环境验证部署与覆盖率，所有「难度」均为**定性判断**。
 
@@ -164,8 +164,8 @@
 
 ## 9. 来源、局限与可追溯性
 
-- **Lighthouse：** 见 `docs/reports/lighthouse-comparative-analysis.md` 第 2、3、6 节及原始 JSON 路径列表。  
-- **课程条文：** 以 `CPT304_Coursework/CPT304_Coursework_01_Details.md` 为准。  
+- **Lighthouse：** 见 `coursework/docs/reports/lighthouse-comparative-analysis.md` 第 2、3、6 节及原始 JSON 路径列表。
+- **课程条文：** 以 `coursework/CPT304_Coursework/CPT304_Coursework_01_Details.md` 为准。
 - **局限：** 单次采样、本地 HTTP、开发服务器与生产不一致；无障碍为自动化规则。
 
 ---
@@ -207,4 +207,4 @@
 
 ---
 
-*需求：`docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md` · 计划：`docs/plans/2026-04-21-003-feat-lighthouse-cpt304-evaluation-plan.md`*
+*需求：`coursework/docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md` · 计划：`coursework/docs/plans/2026-04-21-003-feat-lighthouse-cpt304-evaluation-plan.md`*

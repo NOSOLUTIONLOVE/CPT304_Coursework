@@ -3,14 +3,14 @@ title: Lighthouse 十项目 CPT304 多维度综合评估文档
 type: feat
 status: active
 date: 2026-04-21
-origin: docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md
+origin: coursework/docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md
 ---
 
 # Lighthouse 十项目 CPT304 多维度综合评估文档
 
 ## Overview
 
-基于 `docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md` 与现有 `docs/reports/lighthouse-comparative-analysis.md`，新增一份**面向选题与风险管理**的综合评估 Markdown，对齐 CPT304 评分与 5 项基准，并补充环境配置与「原型→专业版」难度判断。
+基于 `coursework/docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md` 与现有 `coursework/docs/reports/lighthouse-comparative-analysis.md`，新增一份**面向选题与风险管理**的综合评估 Markdown，对齐 CPT304 评分与 5 项基准，并补充环境配置与「原型→专业版」难度判断。
 
 ## Problem Frame
 
@@ -29,7 +29,7 @@ origin: docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md
 
 ### Relevant Code and Patterns
 
-- `docs/reports/lighthouse-comparative-analysis.md`
+- `coursework/docs/reports/lighthouse-comparative-analysis.md`
 - `CPT304_Coursework/CPT304_Coursework_01_Details.md`
 - `Open_Source_Project/README.md`
 
@@ -39,7 +39,7 @@ origin: docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md
 
 ## Key Technical Decisions
 
-- **单文件输出**：`docs/reports/lighthouse-cpt304-multi-criteria-evaluation.md`。
+- **单文件输出**：`coursework/docs/reports/lighthouse-cpt304-multi-criteria-evaluation.md`。
 - **结构**：摘要 → 作业约束速览 → 评估维度说明 → 十项目逐表/逐段 → 横向对比矩阵 → 风险与选题策略 → 来源与局限 → **审查摘要（ce:review）**。
 
 ## Implementation Units
@@ -53,7 +53,7 @@ origin: docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md
 **Dependencies:** 无
 
 **Files:**
-- Create: `docs/reports/lighthouse-cpt304-multi-criteria-evaluation.md`
+- Create: `coursework/docs/reports/lighthouse-cpt304-multi-criteria-evaluation.md`
 
 **Approach:**
 - 引用 comparative 报告中的分数表（可用摘要复述 + 指向原表）。
@@ -74,12 +74,12 @@ origin: docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md
 **Dependencies:** Unit 1
 
 **Files:**
-- Modify: `docs/reports/lighthouse-cpt304-multi-criteria-evaluation.md`
+- Modify: `coursework/docs/reports/lighthouse-cpt304-multi-criteria-evaluation.md`
 
 **Verification:**
 - 矩阵列与正文无矛盾；审查段列出已检查项与残留假设。
 
 ## Sources & References
 
-- **Origin:** [docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md](docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md)
-- [docs/reports/lighthouse-comparative-analysis.md](../reports/lighthouse-comparative-analysis.md)
+- **Origin:** [coursework/docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md](coursework/docs/brainstorms/2026-04-21-lighthouse-cpt304-evaluation-requirements.md)
+- [coursework/docs/reports/lighthouse-comparative-analysis.md](../reports/lighthouse-comparative-analysis.md)

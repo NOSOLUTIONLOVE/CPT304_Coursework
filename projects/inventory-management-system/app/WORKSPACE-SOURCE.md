@@ -4,7 +4,7 @@
 
 | 字段 | 值 |
 |------|-----|
-| 复制自 | `Open_Source_Project/inventory-management-system/`（课程打包样本，与官方列表仓库同源） |
+| 复制自 | `third_party/open_source_projects/inventory-management-system/`（课程打包样本，与官方列表仓库同源） |
 | 快照日期 | 2026-04-21 |
 | 课程列表上游 | `https://github.com/sptin2002/inventory-management-system` |
 
@@ -23,12 +23,12 @@
 
 | 日期 | 方向 | Commit / 说明 |
 |------|------|----------------|
-| 2026-04-21 | `Open_Source_Project/…` → `app/` | 初始完整迁移 |
+| 2026-04-21 | `third_party/open_source_projects/…` → `app/` | 初始完整迁移 |
 
 ## 与只读样本对照
 
 需要对比课程原始打包行为时，仍可打开：
 
-`Open_Source_Project/inventory-management-system/`
+`third_party/open_source_projects/inventory-management-system/`
 
 两者应一致；若课程侧更新打包，可再次 rsync 覆盖 `app/` 并更新上表。

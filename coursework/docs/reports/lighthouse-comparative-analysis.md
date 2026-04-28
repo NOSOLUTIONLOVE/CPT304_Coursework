@@ -2,7 +2,7 @@
 
 ## 1. 摘要
 
-本报告基于仓库内 `Lighthouse/` 目录下 **10 个子项目**各一份 Lighthouse **导航模式（navigation）** JSON 报告，对 **Performance、Accessibility、Best Practices、SEO** 四类得分及核心 Web 指标（FCP、LCP、TBT、CLS）进行对比。整体而言：**纯静态或通过轻量服务打开的 HTML 页面性能分数普遍较高**；**Vite 开发服务器上的 React 客户端与部分依赖 jQuery/Bootstrap 的静态页**在性能或无障碍上出现明显短板。以下为数据驱动的归纳，详细数值见第 3 节总表。
+本报告基于仓库内 `artifacts/lighthouse/` 目录下 **10 个子项目**各一份 Lighthouse **导航模式（navigation）** JSON 报告，对 **Performance、Accessibility、Best Practices、SEO** 四类得分及核心 Web 指标（FCP、LCP、TBT、CLS）进行对比。整体而言：**纯静态或通过轻量服务打开的 HTML 页面性能分数普遍较高**；**Vite 开发服务器上的 React 客户端与部分依赖 jQuery/Bootstrap 的静态页**在性能或无障碍上出现明显短板。以下为数据驱动的归纳，详细数值见第 3 节总表。
 
 ## 2. 方法与数据来源
 
@@ -10,7 +10,7 @@
 |------|------|
 | 工具版本 | 各 JSON 中 `lighthouseVersion` 均为 **13.0.2**（见各文件顶部字段）。 |
 | 采样时间 | 各次运行 `fetchTime` 在 **2026-04-21T05:23Z–05:55Z（UTC）** 区间内，属同一工作会话内连续测试；非同一时刻的横向对比仍具参考价值，但不宜视为严格控制变量的实验。 |
-| 数据文件 | 每个子项目在 `Lighthouse/<项目名>/` 下均有 `.json` 与 `.html`；**本报告数值以 `.json` 为准**，HTML 便于对照可视化。 |
+| 数据文件 | 每个子项目在 `artifacts/lighthouse/<项目名>/` 下均有 `.json` 与 `.html`；**本报告数值以 `.json` 为准**，HTML 便于对照可视化。 |
 | 环境 | 均为本地 URL（`127.0.0.1`、`localhost`），**非 HTTPS**；Lighthouse 对安全与 PWA 相关项的解读需结合此背景。 |
 | 局限 | **单次采样**；无障碍为**自动化规则**，不能替代人工审查；本地 CPU/网络负载会影响性能分数。 |
 
@@ -35,7 +35,7 @@
 | seat-booking-app | 纯前端静态 | 100 | 78 | 100 | 90 |
 | taskify | Node / Express / EJS | 100 | 83 | 92 | 82 |
 
-**数据来源路径示例**：`Lighthouse/advanced-finance-tracker/127.0.0.1_5500-20260421T132304.json`（其余项目见同目录命名规则）。
+**数据来源路径示例**：`artifacts/lighthouse/advanced-finance-tracker/127.0.0.1_5500-20260421T132304.json`（其余项目见同目录命名规则）。
 
 ### 3.2 核心 Web 指标（来自各 JSON `audits`）
 
@@ -94,17 +94,17 @@
 
 | 子项目 | JSON（用于本报告） |
 |--------|-------------------|
-| advanced-finance-tracker | `Lighthouse/advanced-finance-tracker/127.0.0.1_5500-20260421T132304.json` |
-| biztrack | `Lighthouse/biztrack/127.0.0.1_5500-20260421T132415.json` |
-| budget-app | `Lighthouse/budget-app/127.0.0.1_5500-20260421T132545.json` |
-| e-commerce | `Lighthouse/e-commerce/127.0.0.1_5500-20260421T132808.json` |
-| employee-management-system | `Lighthouse/employee-management-system/localhost_5173-20260421T133831.json` |
-| inventory-app-js | `Lighthouse/inventory-app-js/127.0.0.1_5500-20260421T134133.json` |
-| inventory-management-system | `Lighthouse/inventory-management-system/127.0.0.1_5500-20260421T134214.json` |
-| polln | `Lighthouse/polln/127.0.0.1_8000-20260421T135057.json` |
-| seat-booking-app | `Lighthouse/seat-booking-app/127.0.0.1_5500-20260421T135224.json` |
-| taskify | `Lighthouse/taskify/127.0.0.1_3000-20260421T135543.json` |
+| advanced-finance-tracker | `artifacts/lighthouse/advanced-finance-tracker/127.0.0.1_5500-20260421T132304.json` |
+| biztrack | `artifacts/lighthouse/biztrack/127.0.0.1_5500-20260421T132415.json` |
+| budget-app | `artifacts/lighthouse/budget-app/127.0.0.1_5500-20260421T132545.json` |
+| e-commerce | `artifacts/lighthouse/e-commerce/127.0.0.1_5500-20260421T132808.json` |
+| employee-management-system | `artifacts/lighthouse/employee-management-system/localhost_5173-20260421T133831.json` |
+| inventory-app-js | `artifacts/lighthouse/inventory-app-js/127.0.0.1_5500-20260421T134133.json` |
+| inventory-management-system | `artifacts/lighthouse/inventory-management-system/127.0.0.1_5500-20260421T134214.json` |
+| polln | `artifacts/lighthouse/polln/127.0.0.1_8000-20260421T135057.json` |
+| seat-booking-app | `artifacts/lighthouse/seat-booking-app/127.0.0.1_5500-20260421T135224.json` |
+| taskify | `artifacts/lighthouse/taskify/127.0.0.1_3000-20260421T135543.json` |
 
 ---
 
-*文档生成说明：与 `docs/plans/2026-04-21-001-feat-lighthouse-comparative-report-plan.md` 对齐；需求见 `docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md`。*
+*文档生成说明：与 `coursework/docs/plans/2026-04-21-001-feat-lighthouse-comparative-report-plan.md` 对齐；需求见 `coursework/docs/brainstorms/2026-04-21-lighthouse-analysis-report-requirements.md`。*

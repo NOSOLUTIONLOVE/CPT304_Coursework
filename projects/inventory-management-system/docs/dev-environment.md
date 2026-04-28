@@ -2,7 +2,7 @@
 
 课题栈（样本）：**纯静态前端** — HTML、Bootstrap、jQuery、DataTables、本地 JSON 文件 `DB.txt` 作为数据载体；无需数据库服务。
 
-**本组应用根目录（含完整源码）：** `inventory-management-system/app/`（与 `Open_Source_Project/inventory-management-system/` 为同构副本；说明见 `app/WORKSPACE-SOURCE.md`）。下文「应用根目录」均指该路径。
+**本组应用根目录（含完整源码）：** `projects/inventory-management-system/app/`（与 `third_party/open_source_projects/inventory-management-system/` 为同构副本；说明见 `app/WORKSPACE-SOURCE.md`）。下文「应用根目录」均指该路径。
 
 ## 前置
 
@@ -54,8 +54,8 @@ npx --yes serve -p 5500
 本组在仓库内开发可直接：
 
 ```bash
-cd inventory-management-system/app
+cd projects/inventory-management-system/app
 python3 -m http.server 5500
 ```
 
-若要对照 **课程打包样本**（只读），路径仍为 `Open_Source_Project/inventory-management-system/`。两处目录结构应一致；若你组改了根路径，相应更新 Lighthouse 的 `requestedUrl`。
+若要对照 **课程打包样本**（只读），路径为 `third_party/open_source_projects/inventory-management-system/`。两处目录结构应一致；若你组改了根路径，相应更新 Lighthouse 的 `requestedUrl`。
