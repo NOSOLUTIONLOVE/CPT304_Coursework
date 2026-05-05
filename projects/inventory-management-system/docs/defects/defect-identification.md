@@ -3,7 +3,7 @@
 课程要求：**4 个缺陷 = 源代码里已经存在的独立问题**。  
 **不是**缺陷：步骤 4 才要求的双语、Cookie 横幅、隐私政策、达标 Lighthouse 等「基准缺失」，除非能论证这是**实现错误**而非未实现特性。
 
-参考前置说明：`docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md`（R3）。
+参考前置说明：`../../coursework/docs/brainstorms/2026-04-21-cpt304-prerequisite-work-requirements.md`（R3）。
 
 ## 合格缺陷长什么样
 
@@ -31,11 +31,11 @@
 
 ## 现有 Lighthouse 报告怎么用
 
-`docs/reports/lighthouse-comparative-analysis.md` 等对 **inventory-management-system** 有实验室结论（如无障碍子项）。用法：
+`../../../artifacts/lighthouse/` 下对 **inventory-management-system** 有 Lighthouse 结论（如无障碍子项）。用法：
 
 - 将某条审计作为 **线索**；  
 - 在源码中定位并实现 **同一问题的独立叙事**（为何是 bug、如何复现）。
 
 ## 登记与追踪
 
-复制 `docs/templates/defect-log-template.md`，在组内共享文档或仓库中维护；最终措辞润色进正式报告。
+复制 `../templates/defect-log-template.md`，在组内共享文档或仓库中维护；最终措辞润色进正式报告。

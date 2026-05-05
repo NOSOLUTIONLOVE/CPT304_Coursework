@@ -88,6 +88,7 @@
 			
 			var a = null;
 			var b = null;
+			var currentDeleteRow = null;
 			
 			function delete_Row(a){
 				datatable.row( $(a).parents('tr') ).remove().draw();
@@ -108,11 +109,15 @@
 			};
 			
 			$('#myTable').on('click', 'td.editor-delete', function () {
-				a = this;
+				currentDeleteRow = this;
 				$('#deleteModal').modal('toggle');
-				$('#deleteModal').on('click', '#delete_button', function () {
-					delete_Row(a);
-				} );
+			} );
+
+			$('#deleteModal').on('click', '#delete_button', function () {
+				if (currentDeleteRow) {
+					delete_Row(currentDeleteRow);
+					currentDeleteRow = null;
+				}
 			} );
 			
 			$('#myTable').on('click', 'td.editor-edit', function () {

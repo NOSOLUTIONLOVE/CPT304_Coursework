@@ -10,7 +10,7 @@
 
 ## 检索策略
 
-1. 从 `defect-log-template.md` 中抽取 **关键词**：缺陷类型 + 场景（如 `client-side validation inventory`、`WCAG 2.2 landmark`、`DataTables accessibility`）。  
+1. 从 `../templates/defect-log-template.md` 中抽取 **关键词**：缺陷类型 + 场景（如 `client-side validation inventory`、`WCAG 2.2 landmark`、`DataTables accessibility`）。  
 2. 优先：**ACM / IEEE Xplore / Springer / Wiley** 书籍章节、标准（W3C/WCAG）、或 **peer-reviewed** 期刊。行业白皮书需组内一致认可其可信度。  
 3. 近五年优先；经典基础论文除外。  
 4. 记录 **DOI / ISBN / 稳定 URL** 与 **访问日期**（网页时）。
@@ -25,4 +25,4 @@
 
 ## 矩阵与定稿
 
-使用 `docs/templates/literature-matrix-template.md` 维护 **缺陷 ID × 文献 ID**；定稿 bib 后锁版本，与最终报告参考文献表一致。
+使用 `../templates/literature-matrix-template.md` 维护 **缺陷 ID × 文献 ID**；定稿 bib 后锁版本，与最终报告参考文献表一致。

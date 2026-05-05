@@ -4,7 +4,7 @@
 
 ### 快速入口
 
-- **课程流程与综述**：`coursework/CPT304_Coursework/`（旧路径兼容入口：`CPT304_Coursework/`）
+- **课程流程与综述**：`coursework/CPT304_Coursework/`
 - **课程文档中心（brainstorms / plans / reports / guides / templates）**：`coursework/docs/`
 
 ### 维护规则
